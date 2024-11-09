@@ -6,7 +6,7 @@ export function calculatePortfolioValue() {
     return assets.reduce((total, asset) => total + asset.price * asset.quantity, 0);
 }
 
-function getPortfolioAllocation() {
+export function getPortfolioAllocation() {
     const totalValue = calculatePortfolioValue();
     return assets.map(asset =>({
         name: asset.name, 
@@ -14,4 +14,4 @@ function getPortfolioAllocation() {
     }));
 }
 
-module.exports = { calculatePortfolioValue, getPortfolioAllocation};
+
