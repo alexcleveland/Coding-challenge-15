@@ -8,9 +8,9 @@ export function calculatePortfolioValue() {
 
 export function getPortfolioAllocation() {
     const totalValue = calculatePortfolioValue();
-    return assets.map(asset =>({
-        name: asset.name, 
-        allocation:((asset.price * asset.quantity)/totalValue)*100
+    return assets.map(asset => ({
+        name: asset.name,
+        allocation: ((asset.price * asset.quantity) / totalValue) * 100
     }));
 }
 
