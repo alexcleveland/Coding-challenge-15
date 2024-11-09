@@ -6,8 +6,8 @@ const assets =[
     {id: 3, name: `Government Bank`, type: `bonds`, price: 31.00, quanity: 50},
     {id: 4, name: `Ford`, type: `stock`, price: 200.00, quanity: 1000},
 ];
-function getAssetById(id){
+export function getAssetById(id){
     return assets.find(asset => asset.id === id);
 }
-module.exports ={assets, getAssetById};
+
 
